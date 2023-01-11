@@ -1,0 +1,14 @@
+function y = solve_temperature(t,x)
+%This contains the differential equation that must be solved
+% Based on Newtons Law of Cooling
+% Outside termperature is 
+global param_k;
+global outside_temp;
+
+T_External = get_temp(outside_temp,t);
+
+dT_dt = param_k* 
+
+
+
+end
