@@ -13,7 +13,7 @@ o <- observations %>%
        filter(station==STATION, month==10) 
 
 o <- mutate(o,Time=1:nrow(o)) %>%
-       select(Time,station,month,day,hour,rain:wdsp)
+       select(Time,month,day,hour,rain:wdsp)
 
 ggplot(o,aes(x=Time,y=temp))+geom_point()+geom_line()
        
