@@ -10,7 +10,7 @@ FILE    <- glue("data/A17_{STATION}_M{MONTH}.xlsx")
 SHEET   <- glue("A17_{STATION}_M{MONTH}")
 
 o <- observations %>%
-       filter(station==STATION, month==10) 
+       filter(station==STATION, month==MONTH) 
 
 o <- mutate(o,Time=1:nrow(o)) %>%
        select(Time,month,day,hour,rain:wdsp)
